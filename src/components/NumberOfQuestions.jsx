@@ -16,7 +16,7 @@ export default function NumberOfQuestions() {
 
   return (
     <div className="flex flex-col space-y-2">
-      <label className="text-xl">Number of Question</label>
+      <label className="text-xl">Number of Question (1 to 50)</label>
       <input
         type="number"
         min="1"
