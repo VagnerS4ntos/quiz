@@ -134,7 +134,7 @@ function Content() {
           })}
 
           {finishQuiz && (
-            <div className="mt-10 text-2xl flex space-x-2 bg-gray-300 w-48 px-5 py-2 uppercase rounded-md font-semibold">
+            <div className="mt-10 text-2xl flex space-x-2 bg-gray-500 w-48 px-5 py-2 uppercase rounded-md font-semibold">
               <h2>Result: </h2>
               <h3>
                 {global.correctAnswers.length}/{global.allCorrectAnswers.length}
