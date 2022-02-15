@@ -125,11 +125,11 @@ export function checkAnswers(
   //Paint question container
   const allQuestionsContainer = document.querySelectorAll('.question');
   allQuestionsContainer.forEach(
-    (container) => (container.style.border = '4px solid #f00'),
+    (container) => (container.style.border = '2px solid #f00'),
   );
   chosenAnswers.forEach((chosen, index) => {
     if (chosen.answer === allCorrectAnswers[chosen.index]) {
-      allQuestionsContainer[chosen.index].style.border = '4px solid #0f0';
+      allQuestionsContainer[chosen.index].style.border = '2px solid #0f0';
     }
   });
 

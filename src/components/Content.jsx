@@ -68,8 +68,8 @@ function Content() {
 
           {global.quiz.map((question, index) => {
             return (
-              <div className="mb-6 p-4 question" key={`question -${index}`}>
-                <h2 className="text-xl font-semibold">
+              <div className="mb-6 p-5 question" key={`question -${index}`}>
+                <h2 className="text-2xl font-semibold text-blue-500">
                   {index + 1} - {decodeURIComponent(question.question)}
                 </h2>
                 {question.type === 'boolean' && (
@@ -83,7 +83,7 @@ function Content() {
                         data-position={index}
                         className="inputAnswer"
                       />
-                      <label htmlFor={`True${index + 1}`} className="text-lg">
+                      <label htmlFor={`True${index + 1}`} className="text-xl">
                         True
                       </label>
                     </div>
@@ -97,7 +97,7 @@ function Content() {
                         data-position={index}
                         className="inputAnswer"
                       />
-                      <label htmlFor={`False${index + 1}`} className="text-lg">
+                      <label htmlFor={`False${index + 1}`} className="text-xl">
                         False
                       </label>
                     </div>
@@ -121,7 +121,7 @@ function Content() {
                             data-position={index}
                             className="inputAnswer"
                           />
-                          <label htmlFor={answer} className="text-lg">
+                          <label htmlFor={answer} className="text-xl">
                             {decodeURIComponent(answer)}
                           </label>
                         </div>
@@ -158,7 +158,7 @@ function Content() {
         to="top"
         smooth={true}
         duration={500}
-        className="rounded-full bg-yellow-400 inline-block p-2 fixed right-10 bottom-10 cursor-pointer animate-bounce"
+        className="rounded-full bg-yellow-400 inline-block p-2 fixed right-10 bottom-10 cursor-pointer text-black animate-bounce"
       >
         <ArrowUpwardIcon />
       </Link>
@@ -167,7 +167,7 @@ function Content() {
         to="bottom"
         smooth={true}
         duration={500}
-        className="rounded-full bg-yellow-400 inline-block p-2 fixed right-24 bottom-10 cursor-pointer animate-bounce"
+        className="rounded-full bg-yellow-400 inline-block p-2 fixed right-24 bottom-10 cursor-pointer text-black animate-bounce"
       >
         <ArrowDownwardIcon />
       </Link>
